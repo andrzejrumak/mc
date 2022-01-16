@@ -10,96 +10,109 @@
 <body>
    <main>
        <!-- Nav Area -->
-       <nav>
-           <img src="logomc.png" alt="logo monte cinema">
-           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 23.5038H28" stroke="#5D5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 16.0037H28" stroke="#5D5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 8.50372H28" stroke="#5D5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>  
+       <nav >
+           <div class="nav">
+            <img class="nav-logo" src="logomc.png" alt="logo monte cinema">
+            <div class="nav-toggle">
+             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M4 23.5038H28" stroke="#5D5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                 <path d="M4 16.0037H28" stroke="#5D5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                 <path d="M4 8.50372H28" stroke="#5D5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+            </div>
+           </div>
        </nav>
        <!-- Landing Area -->
-       <section>
+       <section id="section-landing">
         <div id="landing">
-            <div id="landing-text">
-                <div id="landing-text-inner">
-                    <h1 class="">Welcome to the best cinema in Monterail</h1>
-                     <h4>Best movies, best experiences, best people. And all that doesn’t exist. Yikes.</h4>
-                     <button>Book a ticket</button>
-                </div>
+            <div class="landing-title">
+                <h1 class="landing-text-title">Welcome to the best cinema in Monterail</h1>
+            </div>
+            <h4 class="landing-text-description">Best movies, best experiences, best people. And all that doesn’t exist. Yikes.</h4>
+            <div class="btn">
+                <button class="btn-primary btn-primary-text">
+                    Book a ticket
+                </button>
             </div>
         </div>
        </section>
        <!-- Films Area -->
-       <section>
+       <section id="section-films">
            <div id="films-header">
-               <h3>SOON</h3>
-               <h3>SEE ALL</h3>
+               <div class="soon">
+                <h3>SOON</h3>
+               </div>
+               <div class="see-all">
+                <h3>SEE ALL</h3>
+               </div>
            </div>
            <div class="card">
                <div class="card-title">
                 <h2>Predator</h2>
                </div>
-               <div class="card-image">
-                <img src="img1.png" alt="predator">
+               <div >
+                <img class="card-image" src="predator.webp" alt="predator">
                </div>
-               <div class="card-discription">
-                <h4>
+               <div >
+                <h4 class="card-description">
                     A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.
                 </h4>
                </div>
            </div>
-           <div class="card">
-            <div class="card-title">
-             <h2>Comanndo</h2>
-            </div>
-            <div class="card-image">
-             <img src="img2.png" alt="predator">
-            </div>
-            <div class="card-discription">
-             <h4>
-                A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.
-             </h4>
-            </div>
+            <div class="card">
+                <div class="card-title">
+                <h2>Comanndo</h2>
+                </div>
+                <div >
+                <img class="card-image" src="commando.webp" alt="commando">
+                </div>
+                <div>
+                <h4 class="card-description">
+                    A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.
+                </h4>
+                </div>
+            </div> 
             <div class="card">
                 <div class="card-title">
                  <h2>Terminator 2</h2>
                 </div>
-                <div class="card-image">
-                 <img src="img3.png" alt="predator">
+                <div >
+                 <img class="card-image" src="terminator.webp" alt="terminator">
                 </div>
-                <div class="card-discription">
-                 <h4>
+                <div>
+                 <h4 class="card-description">
                     A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.
                  </h4>
                 </div>
             </div>            
-        </div>           
        </section>
        <!-- Booking Area -->
        <section>
-           <div id="booking-header">
-               <h2>Online booking</h2>
-               <h3>
-                   Soon
-               </h3>
-               <img src="logomc.png" alt="logo monte cinema">
+           <div class="booking">
+            <div id="booking-header">
+                <h2>Online booking</h2>
+                <h3 class="booking-soon">
+                    Soon
+                </h3>
+                <div class="booking-logo">
+                 <img src="logomc.png" alt="logo monte cinema">
+                </div>
+            </div>
+            <h3 class="booking-description">
+             Leave us your email address and we’ll let you know as soon as the machine will start.
+            </h3>
+            <form action="" id="booking-form">
+                <div class="booking-label">
+                 <label for="email">email</label>
+                </div>
+                <div class="booking-input">
+                 <input class="booking-input-text" type="email" name="email" placeholder="e.g. mynameislaura@mail.com" id="">
+                </div>
+                <div class="btn">
+                 <button class="btn-primary btn-primary-text">Let me know!</button>                    
+                </div>
+            </form>
            </div>
-           <h3>
-            Leave us your email address and we’ll let you know as soon as the machine will start.
-           </h3>
-           <form action="">
-               <div>
-                <label for="email">email</label>
-               </div>
-               <div>
-                <input type="email" name="email" id="">
-               </div>
-               <div>
-                <button>Let me know!</button>                    
-               </div>
-           </form>
-
        </section>
    </main>
 </body>
