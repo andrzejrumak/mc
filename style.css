@@ -171,14 +171,15 @@ margin-left: 20px;
      
   }
 
-  .card {
+  .films {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-items: center;
     padding: 24px;
- 
-    
+  }
+
+  .card1 {    
     /* Snow White */
     background: #FFFFFF;
     box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
@@ -189,8 +190,38 @@ margin-left: 20px;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    margin: 24px 30px;
-    justify-content: center;
+    margin: 24px 0px;
+    padding: 0px 24px;
+  }
+
+  .card2 {
+    /* Snow White */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 24px 0px;
+    padding: 0px 24px;    
+  }
+
+  .card3 {
+    /* Snow White */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
+    border-radius: 8px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 24px 0px;
+    padding: 0px 24px;
   }
 
   .card-title {
@@ -209,6 +240,11 @@ margin-left: 20px;
     order: 0;
     flex-grow: 0;
     margin: 8px 0px;
+  }
+
+  .card-image {
+
+    width: 100%;
   }
 
   .card-description {
@@ -231,11 +267,6 @@ margin-left: 20px;
     order: 2;
     flex-grow: 0;
     margin: 16px 0px;
-  }
-
-  .card-image {
-    object-fit: contain;
-    width: 100%
   }
 
 
@@ -288,7 +319,9 @@ margin-left: 20px;
   }
 
   .booking-logo {
+    display: flex;
     padding: 40px 20px;
+    justify-content: center;
   }
 
   .booking-description {
@@ -374,4 +407,145 @@ margin-left: 20px;
     padding: 1px 20px;
     border: none;
     width: 90%;
+  }
+
+  .btn-booking {
+    margin: 24px;
+  }
+
+  .btn-primary-booking {
+    padding: 20px 40px;
+    background: #EC1115;
+    border-radius: 30px;
+    width: 100%;
+  } 
+
+  .btn-text-booking {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 22px */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+    
+    /* Snow White */
+    color: #FFFFFF;
+  }
+
+
+  @media only screen and (min-width: 1024px) {
+    /* For Tablet: */
+  /* body {
+    background-color: #E5E5E5;
+  }  */
+
+  .container {
+    /* Auto layout */
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  padding: 0px;
+  /* margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 48px;
+  margin-bottom: 48px; */
+  margin: 24px;
+  }
+  
+  .landing-text-title {
+    font-size: 80px;
+    padding: 0px 24px;
+  }
+
+  .landing-text-description {
+    padding: 0px 24px;
+  }
+
+  .btn-primary {
+    width: 300px;
+  }
+
+  .films {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .card1 {
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    width: 400px;
+    margin-right: 40px;
+  }
+
+
+  .card2 {
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    width: 400px;  
+  }
+
+  .card3 {
+    display: none;
+  }
+
+  #booking-header {
+    font-size: 55px;
+  }
+  
+  #booking-form {
+    margin-bottom: 50px;
+  }
+
+  .booking-card {
+    /* Snow White */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 48px 0px;
+    width: 600px;
+    height: 500px;
+    margin: 50px auto; 
+  }
+
+  .btn-booking {
+    margin: 20px;
+  }
+
+  .btn-primary-booking {
+    padding: 20px 40px;
+    background: #EC1115;
+    border-radius: 30px;
+    width: 100%;
+  } 
+
+  .btn-text-booking {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 22px */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+    
+    /* Snow White */
+    color: #FFFFFF;
+  }
+
   }
