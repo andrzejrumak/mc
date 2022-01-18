@@ -13,12 +13,88 @@ body {
   margin: 30px 20px;
 }
 .nav-logo {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-toggle {
   margin-left: auto;
   margin-right: 20px;
+}
+
+.nav-login {
+display: none;
+}
+
+.nav-register {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+
+  text-align: center;
+  letter-spacing: 0.015em;
+
+
+  /* Cherry Red */
+
+  color: #EC1115;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  
+}
+
+.nav-button {
+/* Cherry Red */
+
+background: #EC1115;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.btn-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 30px;
+
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+
+  text-align: center;
+  letter-spacing: 0.015em;
+
+  /* Snow White */
+
+  color: #FFFFFF;
+  background: #EC1115;
+  border-radius: 24px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+
 }
 
 .landing-title {
@@ -41,7 +117,7 @@ margin-left: 20px;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    margin: 41px 0px;
+    margin: 0px 0px;
 }
 
 .landing-text-description {
@@ -63,21 +139,28 @@ margin-left: 20px;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-    margin: 41px 15px;
+    margin: 0px 15px;
 }
 
-#landing {
-    background: #FEF6F6;
+.landing-left {
     flex: none;
     order: 0;
     align-self: stretch;
     align-items: center;
     flex-grow: 0;
-    margin: 41px 0px;
+    background-color: #FEF6F6;
 }
+
+.landing-image {
+   display: none;   
+}
+
 .btn {
-  padding: 20px 30px;
+padding-bottom: 20px;
+
 }
+
+
 
 .btn-primary {
 
@@ -455,7 +538,22 @@ margin-left: 20px;
   margin-bottom: 48px; */
   margin: 24px;
   }
+
+  .nav-svg {
+    display: none;
+  }
+
+  .nav-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 30px;
+  }
   
+  .landing-image {
+    display: none;   
+  }
+
   .landing-text-title {
     font-size: 80px;
     padding: 0px 24px;
@@ -549,3 +647,52 @@ margin-left: 20px;
   }
 
   }
+
+  @media only screen and (min-width: 1440px) {
+    
+    #landing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .landing-text-title {
+      text-align: left;
+      font-siz: 60px;
+
+    }
+
+    .landing-text-description {
+      text-align: left;
+      margin-left: 40px;
+    }
+
+    .btn-primary {
+      margin: 0px 0px auto 0px ;
+    }
+
+    #landing-image {
+      /* display: initial;
+      object-fit: contain;
+      width: 100%; */
+      background: url("./unsplash-AtPWnYNDJnM.webp");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .btn {
+      padding-top: 40px;
+      padding-left: 60px;
+    }
+    
+    .card3 {
+      display: block;
+      flex: none;
+      order: 2;
+      flex-grow: 1;
+      width: 400px;
+      margin-left: 40px;
+    }
+
+
+  }    
