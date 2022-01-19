@@ -23,7 +23,7 @@ body {
 }
 
 .nav-login {
-display: none;
+  display: none;
 }
 
 .nav-register {
@@ -55,15 +55,15 @@ display: none;
 .nav-button {
 /* Cherry Red */
 
-background: #EC1115;
-border-radius: 24px;
+  background: #EC1115;
+  border-radius: 24px;
 
 /* Inside auto layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 16px;
 }
 
 .btn-login {
@@ -91,466 +91,453 @@ margin: 0px 16px;
 
 /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
 
 }
 
 .landing-title {
-    padding: 40px;
+  padding: 40px;
 }
 .landing-text-title {
-    font-family: Eczar;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 102%;
-    /* or 49px */
-    text-align: center;
-    letter-spacing: -0.01em;
+  font-family: Eczar;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 102%;
+  /* or 49px */
+  text-align: center;
+  letter-spacing: -0.01em;
 
-    /* Tuna */
-    color: #343541;
+  /* Tuna */
+  color: #343541;
 
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
 
 .landing-text-description {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 170%;
-    /* or 37px */
-    text-align: center;
-    letter-spacing: 0.015em;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 170%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.015em;
 
 
-    color: #343541;
+  color: #343541;
 
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 0px 15px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 15px;
 }
 
 .landing-left {
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    align-items: center;
-    flex-grow: 0;
-    background-color: #FEF6F6;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  align-items: center;
+  flex-grow: 0;
+  background-color: #FEF6F6;
 }
 
 .landing-image {
-   display: none;   
+  display: none;   
 }
 
 .btn {
-padding-bottom: 20px;
-
+  padding-bottom: 20px;
 }
 
 
 
 .btn-primary {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-    background: #EC1115;
-    border-radius: 30px;
-    
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    width: 90%;
-    margin: 20px auto;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background: #EC1115;
+  border-radius: 30px;
+  
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  width: 90%;
+  margin: 20px auto;
   }
   
   .btn-primary:hover {
-    background: #A60C0E;
-    border-radius: 30px;
+  background: #A60C0E;
+  border-radius: 30px;
   }
 
   .btn-primary-text {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 100%;
-    /* identical to box height, or 22px */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.015em;
-    
-    /* Snow White */
-    color: #FFFFFF;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  /* identical to box height, or 22px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.015em;
+  
+  /* Snow White */
+  color: #FFFFFF;
 
   }
-  #sections-films {
-    background: #E5E5E5;
-    align-items: center;
-    justify-items: center;
+#sections-films {
+  background: #E5E5E5;
+  align-items: center;
+  justify-items: center;
   }
 
-  #films-header {
-      display: flex;
-      justify-items: center;
+#films-header {
+  display: flex;
+  justify-items: center;
 
-  }
+}
 
-  .soon {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 170%;
-    /* or 37px */
-    letter-spacing: 0.015em;
-    text-transform: uppercase;
-    
-    /* Tuna */
-    color: #343541; 
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
-  }
+.soon {
+  display: flex;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 170%;
+  /* or 37px */
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  
+  /* Tuna */
+  color: #343541; 
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+}
 
-  .see-all {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 170%;
-    /* or 37px */
-    letter-spacing: 0.015em;
-    text-transform: uppercase;
-    
-    /* Cherry Red */
-    color: #EC1115;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 24px;
-    margin-left: auto;
-     
-  }
+.in-cinema {
+  display: none;
+}
 
-  .films {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-items: center;
-    padding: 24px;
-  }
+.see-all {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 170%;
+  /* or 37px */
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  
+  /* Cherry Red */
+  color: #EC1115;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+  margin-left: auto;    
+}
 
-  .card1 {    
-    /* Snow White */
-    background: #FFFFFF;
-    box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
-    border-radius: 8px;
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 24px 0px;
-    padding: 0px 24px;
-  }
+.films {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  padding: 24px;
+}
 
-  .card2 {
-    /* Snow White */
-    background: #FFFFFF;
-    box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
-    border-radius: 8px;
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 24px 0px;
-    padding: 0px 24px;    
-  }
+.card1 {    
+  /* Snow White */
+  background: #FFFFFF;
+  box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+  padding: 0px 24px;
+}
 
-  .card3 {
-    /* Snow White */
-    background: #FFFFFF;
-    box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
-    border-radius: 8px;
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 24px 0px;
-    padding: 0px 24px;
-  }
+.card2 {
+  /* Snow White */
+  background: #FFFFFF;
+  box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+  padding: 0px 24px;    
+}
 
-  .card-title {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+.card3 {
+  /* Snow White */
+  background: #FFFFFF;
+  box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08), 0px 5.36071px 17.4223px rgba(0, 0, 0, 0.0238443), 0px 1.59602px 5.18708px rgba(0, 0, 0, 0.0161557);
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+  padding: 0px 24px;
+}
 
-    /* Tuna */
-    color: #343541;
+.card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
 
+  /* Tuna */
+  color: #343541;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 8px 0px;
-  }
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
 
-  .card-image {
+.card-image {
+  width: 100%;
+}
 
-    width: 100%;
-  }
+.card-description {
+  justify-content: center;
 
-  .card-description {
-    justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  /* or 31px */
+  letter-spacing: 0.04em;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 170%;
-    /* or 31px */
-    letter-spacing: 0.04em;
-
-    /* Tuna */
-    color: #343541;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 16px 0px;
-  }
+  /* Tuna */
+  color: #343541;
 
 
-  #booking-header {
-    font-family: Eczar;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 102%;
-    /* identical to box height, or 41px */
-    text-align: center;
-    letter-spacing: -0.01em;
-
-    /* Tuna */
-    color: #343541;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
 
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
+#booking-header {
+  font-family: Eczar;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 102%;
+  /* identical to box height, or 41px */
+  text-align: center;
+  letter-spacing: -0.01em;
 
-  .booking {
-    margin-top: 30px;
-  }
-
-  .booking-soon {
-
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 170%;
-    /* or 37px */
-    text-align: center;
-    letter-spacing: 0.015em;
-
-    /* Tuna */
-    color: #343541;
+  /* Tuna */
+  color: #343541;
 
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 12px 0px;
-  }
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 
-  .booking-logo {
-    display: flex;
-    padding: 40px 20px;
-    justify-content: center;
-  }
+.booking {
+  margin-top: 30px;
+}
 
-  .booking-description {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    /* or 150% */
-    text-align: center;
+.booking-soon {
 
-    /* Charade */
-    color: #292A33;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 170%;
+  /* or 37px */
+  text-align: center;
+  letter-spacing: 0.015em;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 48px 20px;
-  }
-
-  #booking-form {
-
-  }
-
-  .booking-label {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-
-    /* Bittersweet */
-    color: #F47073;
+  /* Tuna */
+  color: #343541;
 
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 10px 20px;
-  }
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0px;
+}
 
-  .booking-input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 16px 24px 24px;
+.booking-logo {
+  display: flex;
+  padding: 40px 20px;
+  justify-content: center;
+}
 
-    background: #F0F0F0;
-    border-radius: 8px;
+.booking-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+  text-align: center;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 20px 20px;
-    margin-bottom: 30px;
-  }
-
-  .booking-input-text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-
-    /* Jumbo */
-    color: #85868D;
-    background: #F0F0F0;
+  /* Charade */
+  color: #292A33;
 
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 8px;
-    padding: 1px 20px;
-    border: none;
-    width: 90%;
-  }
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 48px 20px;
+}
 
-  .btn-booking {
-    margin: 24px;
-  }
+#booking-form {
 
-  .btn-primary-booking {
-    padding: 20px 40px;
-    background: #EC1115;
-    border-radius: 30px;
-    width: 100%;
-  } 
+}
 
-  .btn-text-booking {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 100%;
-    /* identical to box height, or 22px */
+.booking-label {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.015em;
-    
-    /* Snow White */
-    color: #FFFFFF;
-  }
+  /* Bittersweet */
+  color: #F47073;
 
-  .known {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 40px;
 
-    /* Bittersweet */
-    color: #F47073;
-  }
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 20px;
+}
+
+.booking-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 16px 24px 24px;
+
+  background: #F0F0F0;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.booking-input-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Jumbo */
+  color: #85868D;
+  background: #F0F0F0;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+  padding: 1px 20px;
+  border: none;
+  width: 90%;
+}
+
+.btn-booking {
+  margin: 24px;
+}
+
+.btn-primary-booking {
+  padding: 20px 40px;
+  background: #EC1115;
+  border-radius: 30px;
+  width: 100%;
+} 
+
+.btn-text-booking {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 22px */
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.015em;
+  
+  /* Snow White */
+  color: #FFFFFF;
+}
+
+.known {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px;
+
+  /* Bittersweet */
+  color: #F47073;
+}
 
 
   @media only screen and (min-width: 1024px) {
+ 
     /* For Tablet: */
-  /* body {
-    background-color: #E5E5E5;
-  }  */
-
   .container {
-    /* Auto layout */
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start; */
   padding: 0px;
-  /* margin-left: 48px;
-  margin-right: 48px;
-  margin-top: 48px;
-  margin-bottom: 48px; */
   margin: 24px;
   }
 
@@ -564,7 +551,7 @@ padding-bottom: 20px;
     align-items: center;
     padding: 16px 30px;
   }
-  
+
   .landing-image {
     display: none;   
   }
@@ -587,6 +574,10 @@ padding-bottom: 20px;
     flex-direction: row;
     align-items: flex-start;
     padding: 20px;
+  }
+
+  .in-cinema {
+    display: flex;
   }
 
   .card1 {
@@ -613,7 +604,7 @@ padding-bottom: 20px;
   #booking-header {
     font-size: 55px;
   }
-  
+
   #booking-form {
     margin-bottom: 50px;
   }
@@ -661,53 +652,55 @@ padding-bottom: 20px;
     color: #FFFFFF;
   }
 
+}
+
+@media only screen and (min-width: 1440px) {
+
+  /* FOR DESKTOP */
+
+  #landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media only screen and (min-width: 1440px) {
-    
-    #landing {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    
-    .landing-text-title {
-      text-align: left;
-      font-siz: 60px;
+  .landing-text-title {
+    text-align: left;
+    font-siz: 60px;
 
-    }
+  }
 
-    .landing-text-description {
-      text-align: left;
-      margin-left: 40px;
-    }
+  .landing-text-description {
+    text-align: left;
+    margin-left: 40px;
+  }
 
-    .btn-primary {
-      margin: 0px 0px auto 0px ;
-    }
+  .btn-primary {
+    margin: 0px 0px auto 0px ;
+  }
 
-    #landing-image {
-      /* display: initial;
-      object-fit: contain;
-      width: 100%; */
-      background: url("./unsplash-AtPWnYNDJnM.webp");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+  #landing-image {
+    background: url("./unsplash-AtPWnYNDJnM.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-    .btn {
-      padding-top: 40px;
-      padding-left: 60px;
-    }
-    
-    .card3 {
-      display: block;
-      flex: none;
-      order: 2;
-      flex-grow: 1;
-      width: 400px;
-      margin-left: 40px;
-    }
+  .btn {
+    padding-top: 40px;
+    padding-left: 60px;
+  }
 
+  .card3 {
+    display: block;
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+    width: 400px;
+    margin-left: 40px;
+  }
 
-  }    
+  .known {
+    font-size: 30px;
+  }
+
+}    

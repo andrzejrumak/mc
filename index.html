@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Monte Cinema</title>
-    <script src="https://unpkg.com/vue@next"></script>
-    <!-- <script src="./vue.js"></script> -->
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="./vue.js"></script>
 </head>
 <body>
-   <div id="app">
-   <main>
-
+<div id="app">
+<main>
        <!-- Nav Area -->
-       <nav >
-           <div class="nav">
+    <nav >
+        <div class="nav">
             <img  src="logo.svg" alt="logo monte cinema">
             <div class="nav-toggle">
                 <div class="nav-svg">
@@ -32,16 +31,16 @@
                     <button class="btn-login">Login</button>
                 </div>
             </div>
-           </div>
-       </nav>
-       <div class="container">
+        </div>
+    </nav>
+    <div class="container">
         <section id="section-landing">
             <div id="landing">
                 <div class="landing-left">
                     <div class="landing-title">
                         <h1 class="landing-text-title">Welcome to the best cinema in Monterail</h1>
                     </div>
-                    <h4 class="landing-text-description">Best movies, best experiences, best people. And all that doesn’t exist. Yikes.</h4>
+                    <h3 class="landing-text-description">Best movies, best experiences, best people. And all that doesn’t exist. Yikes.</h3>
                     <div class="btn">
                         <button @click="scrollToTop" class="btn-primary btn-primary-text">
                             Book a ticket
@@ -58,6 +57,7 @@
             <div id="films-header">
                 <div class="soon">
                     <h3>SOON</h3>
+                    <h3 class="in-cinema">IN THE CINEMA</h3>
                 </div>
                 <div class="see-all">
                     <h3>SEE ALL</h3>
@@ -105,50 +105,50 @@
                     </div> 
                 </div>
            
-           </section>
+        </section>
            <!-- Booking Area -->
-           <section>
-               <div class="booking">
-                <div id="booking-header">
-                    <h2>Online booking</h2>
-                    <h3 class="booking-soon">
-                        Soon
-                    </h3>
-                </div>                    
-                <div class="booking-card">
-                    <div class="booking-logo" >
-                     <img  src="logo.svg" alt="logo monte cinema">
-                    </div>
-                    <h3 class="booking-description">
-                    Leave us your email address and we’ll let you know as soon as the machine will start.
-                    </h3>
-                    <div v-if="visible">
-                        <form v-if="visible" action="" id="booking-form">
-                            <div class="booking-label">
-                            <label for="email">email</label>
-                            </div>
-                            <div class="booking-input">
-                            <input class="booking-input-text" type="email" name="email" placeholder="e.g. mynameislaura@mail.com" id="email">
-                            </div>
-                            <div class="btn-booking">
-                            <button
-                                @click="visible = false"
-                                class="btn-primary-booking btn-text-booking">
-                                Let me know!
-                            </button>                    
-                            </div>
-                        </form>
-                    </div>
-                    <div v-else class="known">
-                        <h1>thank you </h1>
-                        <h1>for your email</h1>
-                    </div>
+    <section>
+        <div class="booking">
+            <div id="booking-header">
+                <h2>Online booking</h2>
+                <h3 class="booking-soon">
+                    Soon
+                </h3>
+            </div>                    
+            <div class="booking-card">
+                <div class="booking-logo" >
+                    <img  src="logo.svg" alt="logo monte cinema">
+                </div>
+                <h3 class="booking-description">
+                Leave us your email address and we’ll let you know as soon as the machine will start.
+                </h3>
+                <div v-if="visible">
+                    <form action="" id="booking-form">
+                        <div class="booking-label">
+                        <label for="email">email</label>
+                        </div>
+                        <div class="booking-input">
+                        <input class="booking-input-text" type="email" name="email" placeholder="e.g. mynameislaura@mail.com" id="email">
+                        </div>
+                        <div class="btn-booking">
+                        <button
+                            @click="visible = false"
+                            class="btn-primary-booking btn-text-booking">
+                            Let me know!
+                        </button>                    
+                        </div>
+                    </form>
+                </div>
+                <div v-else class="known">
+                    <h1>thank you </h1>
+                    <h1>for your email</h1>
                 </div>
             </div>
-           </section>
-       </div>
+        </div>
+    </section>
+    </div>
 
-   </main>
+</main>
 </div>
 
 <script>
@@ -157,6 +157,7 @@ createApp({
     setup() {
 
     const visible = ref(true)    
+    const windowWidth = ref(0) 
 
     const scrollToTop = () => {
         setTimeout(() => {
@@ -165,11 +166,8 @@ createApp({
         window.scrollTo({ top: 3000, behavior: 'smooth' });
         }
 
-    const showKnow = () => {this.visible = false}
-
     return {
         scrollToTop,
-        showKnow,
         visible
         }
     }
