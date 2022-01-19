@@ -4,6 +4,9 @@ body {
   margin: 0px
 }
 
+*:focus {
+  outline: none;
+}
 
 #section-landing {
   justify-items: center;
