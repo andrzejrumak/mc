@@ -4,6 +4,7 @@ body {
   margin: 0px
 }
 
+
 #section-landing {
   justify-items: center;
 }
@@ -517,6 +518,20 @@ padding-bottom: 20px;
     
     /* Snow White */
     color: #FFFFFF;
+  }
+
+  .known {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
+
+    /* Bittersweet */
+    color: #F47073;
   }
 
 

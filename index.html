@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Monte Cinema</title>
-    <!-- <script src="https://unpkg.com/vue@next"></script> -->
-    <script src="./vue.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="./vue.js"></script> -->
 </head>
 <body>
    <div id="app">
@@ -16,7 +16,7 @@
        <!-- Nav Area -->
        <nav >
            <div class="nav">
-            <img class="nav-logo" src="logomc.png" alt="logo monte cinema">
+            <img  src="logo.svg" alt="logo monte cinema">
             <div class="nav-toggle">
                 <div class="nav-svg">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,8 +43,8 @@
                     </div>
                     <h4 class="landing-text-description">Best movies, best experiences, best people. And all that doesn’t exist. Yikes.</h4>
                     <div class="btn">
-                        <button @click="increment" class="btn-primary btn-primary-text">
-                            Book a ticket {{count}}
+                        <button @click="scrollToTop" class="btn-primary btn-primary-text">
+                            Book a ticket
                         </button>
                     </div>
                 </div>
@@ -117,25 +117,32 @@
                 </div>                    
                 <div class="booking-card">
                     <div class="booking-logo" >
-                     <img  src="logomc.png" alt="logo monte cinema">
+                     <img  src="logo.svg" alt="logo monte cinema">
                     </div>
                     <h3 class="booking-description">
                     Leave us your email address and we’ll let you know as soon as the machine will start.
                     </h3>
-                    <form action="" id="booking-form">
-                        <div class="booking-label">
-                        <label for="email">email</label>
-                        </div>
-                        <div class="booking-input">
-                        <input class="booking-input-text" type="email" name="email" placeholder="e.g. mynameislaura@mail.com" id="">
-                        </div>
-                        <div class="btn-booking">
-                        <button
-                            class="btn-primary-booking btn-text-booking">
-                            Let me know!
-                        </button>                    
-                        </div>
-                    </form>
+                    <div v-if="visible">
+                        <form v-if="visible" action="" id="booking-form">
+                            <div class="booking-label">
+                            <label for="email">email</label>
+                            </div>
+                            <div class="booking-input">
+                            <input class="booking-input-text" type="email" name="email" placeholder="e.g. mynameislaura@mail.com" id="email">
+                            </div>
+                            <div class="btn-booking">
+                            <button
+                                @click="visible = false"
+                                class="btn-primary-booking btn-text-booking">
+                                Let me know!
+                            </button>                    
+                            </div>
+                        </form>
+                    </div>
+                    <div v-else class="known">
+                        <h1>thank you </h1>
+                        <h1>for your email</h1>
+                    </div>
                 </div>
             </div>
            </section>
@@ -148,16 +155,23 @@
 const { ref, createApp } = Vue
 createApp({
     setup() {
-    const count = ref(1)
 
-    const increment = () => {
-        count.value++
-    }
+    const visible = ref(true)    
+
+    const scrollToTop = () => {
+        setTimeout(() => {
+            document.getElementById("email").focus();
+        }, 1800)
+        window.scrollTo({ top: 3000, behavior: 'smooth' });
+        }
+
+    const showKnow = () => {this.visible = false}
 
     return {
-        count, 
-        increment
-    }
+        scrollToTop,
+        showKnow,
+        visible
+        }
     }
 }).mount('#app')
 </script>
